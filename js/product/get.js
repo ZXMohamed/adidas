@@ -49,7 +49,7 @@ function getdata(s, e) {
         newproduct.appendChild(nameprice);
         newproduct.addEventListener("click", function () {
           setwanted(this.getAttribute("name"));
-          window.location.assign("../../web/showproduct.html");
+          window.location.assign("../../adidas/web/showproduct.html");
         })
         products.appendChild(newproduct);
       }
