@@ -42,7 +42,7 @@ get(recentPostsRef).then((snapshot) => {
     newproduct.appendChild(nameprice);
     newproduct.addEventListener("click", function () { 
     setwanted(this.getAttribute("name"));
-    window.location.assign("./web/showproduct.html");
+    window.location.assign("../web/showproduct.html");
       })
     laststyles.appendChild(newproduct);
 }
