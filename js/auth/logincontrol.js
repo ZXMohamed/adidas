@@ -41,8 +41,8 @@ showpass[0].addEventListener("click", function () {
     }
 });
 navsignbutton.addEventListener("click", function () { 
-    window.location.assign("../../web/signup.html");
+    window.location.assign("../../adidas/web/signup.html");
 })
 gosignbutton.addEventListener("click", function () { 
-    window.location.assign("../../web/signup.html");
+    window.location.assign("../../adidas/web/signup.html");
 })
