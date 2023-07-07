@@ -449,7 +449,6 @@ Should you need to modify your `$grid-breakpoints`, your changes will apply to a
 ## CSS variables
 
 Bootstrap 4 includes around two dozen [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) in its compiled CSS. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser's Inspector, a code sandbox, or general prototyping.
-
 ### Available variables
 
 Here are the variables we include (note that the `:root` is required). They're located in our `_root.scss` file.
