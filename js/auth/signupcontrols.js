@@ -58,7 +58,7 @@ export let userdata = {
         }
     }
 }
-fetch("../../json/countries+states.json")
+fetch("../../adidas/json/countries+states.json")
     .then(response => response.json())
     .then(result => { 
         for (i of result) { 
