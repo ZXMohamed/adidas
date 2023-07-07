@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adidas</title>
+    <link rel="stylesheet" href="../bootstrap-4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container navcontainer">
+            <a class="navbar-brand" href="../index.html">adidas</a>
+            <div class="searchsec h-100">
+                <input type="search" class="h-100 w-75" placeholder="Search">
+                <button class="h-100">&#xf002;</button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            </div>
+            <div class="logsignsec nav-link">
+                <div id="navloginbutton" class="nav-link"></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <main class="midsigncontainer d-flex justify-content-center align-items-center h-100 w-100">
+        <div class="midsigncontainerbg h-100 w-100">
+        </div>
+        <div class="signupcon">
+                <div class="signupconheader d-flex justify-content-center align-items-center"><span>Signup</span></div>
+            <div class="row h-100 w-100">
+                <div class="col-6">
+                    <div class="signupwithsec">
+                        <span class="signupwith">Signup with :</span>
+                        <div>Google</div>
+                        <div>Facebook</div>
+                        <span id="gologin" class="gologin">I have an account</span>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <div class="filldatasec">
+                        <div id="stepscon" class="stepscon d-flex justify-content-around align-items-center position-relative">
+                            <section>
+                                <div id="stepsbar" class="stepsbar h-100"></div>
+                            </section>
+                            <div><div><div>1</div></div></div>
+                            <div><div><div>2</div></div></div>
+                            <div><div><div>3</div></div></div>
+                            <div><div><div>4</div></div></div>
+                        </div>
+                        <div class="datainputcon w-100">
+                            <div id="inputshow" class="datainput">
+                                <main id="personalform" class="personal">
+                                    <input type="text" id="firstname" class="form-control" placeholder="First name">
+                                    <input type="text" id="lastname" class="form-control" placeholder="Last name" >
+                                    <input type="number" id="age" class="form-control" pattern="" placeholder="Age (optional)" >
+                                    <select id="sex" class="form-control">
+                                        <option value="0" disabled selected hidden>Sex (optional)</option>
+                                        <option >male</option>
+                                        <option >female</option>
+                                    </select>
+                                    <select id="country" class="form-control">
+                                        <option value="0" disabled selected hidden>Country (optional)</option>
+                                    </select>
+                                    <select id="city" class="form-control" disabled>
+                                        <option value="0" disabled selected hidden>City (optional)</option>
+                                    </select>
+                                </main>
+                                <main id="accountform" class="account">
+                                        <input type="email" id="email" class="form-control" placeholder="Email" >
+                                        <span>you will need this email to login</span>
+                                </main>
+                                <main id="passwordform" class="password">
+                                        <div class="showpass">
+                                            <i>&#xf070;</i>
+                                            <input type="password" id="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <span id="pattrnmsg">the password length shouldn't be less than 6 letters contains at last 1 upper case character and number</span>
+                                        <div class="showpass">
+                                            <i>&#xf070;</i>
+                                            <input type="password" id="confirmpassword" class="form-control" placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                                        </div>
+                                        <span id=passmsg>repeat the password here</span>
+                                </main>
+                                <main id="userphotoform" class="userphoto">
+                                    <label for="photoselector" class="h-100 w-100 d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../photo/default.png" id="userphoto" class="">
+                                        <span>click here to peek photo</span>
+                                        <span>choose your personal photo (optional)</span>
+                                    </label>
+                                    <input id="photoselector" type="file" style="display: none;">
+                                </main>
+                            </div>
+                            <div class="controlbuttoncon">
+                                <a id="pre" class="controlbutton">Previous</a>
+                                <a id="next" class="controlbutton">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footersec w-100">
+        <div class="row h-100">
+            <section class="col-3 footerprandsocial">
+                <div class="footerbrand w-100 d-flex justify-content-center align-items-center">
+                    <img src="../photo/mainpage/footersec/adidasprand.png" width="65%">
+                </div>
+                <div class="footersocial w-100 d-flex justify-content-center align-items-center">
+                    <img src="../photo/mainpage/footersec/twit.png" width="7%">
+                    <img src="../photo/mainpage/footersec/pin.png" width="7%">
+                    <img src="../photo/mainpage/footersec/insta.png" width="7%">
+                    <img src="../photo/mainpage/footersec/face.png" width="7%">
+                </div>
+            </section>
+            <section class="col-3 footerpolicymobile">
+                <div class="footerpolicy w-100 d-flex justify-content-center align-items-end">
+                    <ul class="footerpolicylist">
+                        <li>&nbsp;&nbsp;<a href="">User Agreement</a></li>
+                        <li>&nbsp;&nbsp;<a href="">Privacy Policy</a></li>
+                        <li>&nbsp;&nbsp;<a href="">Cookies Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footermobile w-100 d-flex justify-content-center align-items-center">
+                    <img src="../photo/mainpage/footersec/mobile.png" usemap="#footermobileapp" width="40%">
+                    <map name="footermobileapp">
+                        <area shape="rect" coords="0,0,200%,50%" href="facebook.com" alt="get on google play">
+                        <area shape="rect" coords="0,100,200%,50%" href="google.com" alt="get on google play">
+                    </map>
+                </div>
+            </section>
+            <section class="col-6">
+                <div class="row h-100">
+                    <section class="col-4 footerlinks w-100 h-100">
+                        <span>Shop</span>
+                        <ul type="none">
+                            <li>Gift Guides</li>
+                            <li>Fan Art</li>
+                            <li>Blog</li>
+                            <li>Login</li>
+                            <li>Signup</li>
+                            <li>About Us</li>
+                        </ul>
+                    </section>
+                    <section class="col-4 footerlinks w-100 h-100">
+                        <span>Business</span>
+                        <ul type="none">
+                            <li>Delivery</li>
+                            <li>Returns</li>
+                            <li>Help Center</li>
+                            <li>Guidelines</li>
+                            <li>Copyright</li>
+                            <li>Investor Center</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </section>
+                    <section class="col-4 footerlinks w-100 h-100">
+                        <span>Online store</span>
+                        <ul type="none">
+                            <li>Sell online</li>
+                            <li>Features</li>
+                            <li>Examples</li>
+                            <li>Website editor</li>
+                            <li>Online retail</li>
+                            <li>Ecommerce website</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <section id="wating" class="waiting">please waite ...</section>
+</body>
+<script src="../bootstrap-4.6.2/site/static/docs/4.6/assets/js/vendor/jquery.slim.min.js"></script>
+    <script src="../bootstrap-4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/auth/signupcontrols.js"></script>
+    <script type="module" src="../js/auth/signupauth.js"></script>
+    <script type="module" src="../js/auth/golog.js"></script>
+</html>
+<!-- "C:\Users\trust\Desktop\23346\bootstrap-4.6.2\bootstrap-4.6.2\site\static\docs\4.6\assets\js\vendor\jquery.slim.min.js" -->

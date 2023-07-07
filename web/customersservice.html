@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="chatbox" class="chat">
+        <header class="chatheader">
+            chat
+        </header>
+        <div id="chatbody" class="chatbody">
+        </div>
+        <div class="chatcontrols">
+            <input type="text" id="msg" style="width: 70%;">
+            <button id="send">send</button>
+        </div>
+    </section>
+    <style>
+        html
+        {
+            height: 100%;
+        }
+        body
+        {
+            height: 100%;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chat
+        {
+            display: block;
+            width: 40%;
+            height: 70%;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
+            z-index: 15;
+            background-color: #222A35;
+        }
+        .chatheader
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            background-color: #8497B0;
+            font-weight: bold;
+            color: white;
+            font-size: 24px;
+        }
+        .chatbody
+        {
+            height: 70%;
+            padding: 5%;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        .chatcontrols
+        {
+            height: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .chatcontrols>button
+        {
+            border: 0px solid;
+        }
+        .msg
+        {
+        background-color: #8497B0;
+        padding: 3%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        clear: both;
+        margin-bottom: 2%;
+        }
+        .lmsg
+        {
+            float: right;
+            clear: both;
+        }
+    </style>
+</body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+    const firebaseConfig = {
+        apiKey: "AIzaSyAYygJ3yS3uN1nSD5AsBPQP-bfLDQDX-iE",
+        authDomain: "fireauth-d3aef.firebaseapp.com",
+        projectId: "fireauth-d3aef",
+        storageBucket: "fireauth-d3aef.appspot.com",
+        messagingSenderId: "392866553267",
+        appId: "1:392866553267:web:5950e44a848db0ef377fc6"
+    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const send = document.getElementById("send");
+    const msg = document.getElementById("msg");
+    const chatbody = document.getElementById("chatbody");
+    import { getDatabase, ref, set, onValue, get, child } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-database.js";
+    const db = getDatabase();
+    const dbRef = ref(db, 'customersservice/user');
+        onValue(dbRef, (snapshot) => {
+            snapshot.forEach((childSnapshot) => {
+                const childKey = childSnapshot.key;
+                const childData = childSnapshot.val();
+                const msg = document.createElement("div");
+                msg.classList.add("msg");
+                msg.innerHTML = childData;
+                chatbody.appendChild(msg);
+            });
+        }, {
+            onlyOnce: false
+        });
+        send.addEventListener("click", function () {
+            set(ref(db, 'customersservice/admin'), {
+                admin: msg.value
+            });
+            const umsg = document.createElement("div");
+            umsg.classList.add("msg");
+            umsg.classList.add("lmsg");
+            umsg.innerHTML = msg.value;
+            chatbody.appendChild(umsg);
+        })
+</script>
+</html>

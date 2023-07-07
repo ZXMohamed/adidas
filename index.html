@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adidas</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container navcontainer">
+        <a class="navbar-brand" href="#">adidas</a>
+
+        <div class="searchsec h-100">
+            <section class="dropdown searchdropdown h-100 w-75"><input id="searchinput" type="search" data-toggle="dropdown" class="h-100" placeholder="Search">
+            <div id="searchdropdownlist" class="dropdown-menu searchdropdownlist" aria-labelledby="dropdownMenu2">
+            </div>
+            </section>
+                <button id="search" data-toggle="dropdown" class="searchbutton h-100">&#xf002;</button>
+            <div class="dropdown filterdropdown h-100">
+                <button data-toggle="dropdown" class="h-100">&#xf1de;</button>
+                <div id="searchfilterlist" class="dropdown-menu filterdropdownlist" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" value="name" type="button">
+                        <span>Search by : name</span>
+                    </button>
+                    <button class="dropdown-item" value="color" type="button">
+                        <span>Search by : color</span>
+                    </button>
+                    <button class="dropdown-item" value="price" type="button">
+                        <span>Search by : price</span>
+                    </button>
+                    <button class="dropdown-item" value="rate" type="button">
+                        <span>Search by : rate</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="web/product.html">Our shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mobile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="logsignsec nav-link">
+            <div id="navloginbutton" class="nav-link login"></div>
+            <div id="navsignbutton" class="nav-link signup"></div>
+            <div id="userphotobutton" class="nav-link userphoto"></div>
+            <div id="logoutbutton" class="nav-link logout">&#xf2f5;</div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon">&#xf0c9;</span>
+        </button>
+        </div>
+    </nav>
+    <section class="floatbuttons">
+        <div>&#xf042;</div>
+        <div>&#xf004;</div>
+        <div>&#xf217;</div>
+        <div  id="chat" >&#xf4ad;</div>
+    </section>
+    <section id="chatbox" class="chat">
+        <header class="chatheader">
+            chat
+        </header>
+        <div id="chatbody" class="chatbody">
+
+        </div>
+        <div class="chatcontrols">
+            <input type="text" id="msg" style="width: 70%;">
+            <button id="send">send</button>
+        </div>
+    </section>
+    <header id="headersec" class="headersec w-100">
+            <div id="headerbackphoto" class="headerbackphoto w-100">
+                <div class="brandimg">
+                    <img src="photo/adidasprand.png" width="100%">
+                </div>
+                <div id="newmodel" class="newmodel">
+
+                </div>
+            </div>
+    </header>
+    <main id="logsign" class="logsign w-100">
+        <div class="position-relative h-100 w-100">
+            <section class="loginsec d-flex justify-content-center align-items-center h-100 w-100">
+                <div class="loginform">
+                    <span class="loginformheader">Login</span>
+                    <br><br>
+                    <input id="email" type="email" class="email" placeholder="email">
+                    <div class="showpass">
+                        <i>&#xf070;</i>
+                        <input id="password" type="password" class="password" placeholder="Password">
+                    </div>
+                    <div class="loginbuttoncon">
+                        <span class="loginwith">Login with :</span>
+                        <button class="googlelogin">G</button>
+                        <button class="facebooklogin">F</button>
+                        <button id="loginbutton" class="loginbutton">Login</button>
+                    </div>
+                    <div class="forgetpasswordcon">
+                        <button id="forgetpassword" class="Forgetpasswordbutton">Forget password</button>
+                    </div>
+                    <div class="gosigncon">
+                        <span id="gosignbutton" class="gosignbutton">I don’t have account</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <div class="welcometxt w-100">
+        Welcome to adidas fashion Shoes
+    </div>
+    <main class="aboutsitesec w-100 d-flex justify-content-center align-items-center"> 
+        <div class="aboutsite row">
+            <aside class="col-5 aboutimg">
+                
+            </aside>
+            <aside class="col-7 abouttxt d-flex justify-content-center align-items-center">
+                <div class="abouttxtcon">
+                    <header class="abouttxtheader">Fashion Shoes</header>
+                    <br>
+                    <p class="text1">
+                        your new style can be more attractive you can try to buy one of our product and we sure you will love It because we use
+                        best material and best price.
+                    </p>
+                    <p class="text2">
+                        Here you can know about the new styles of Shoes from adidas and buy the sittable Shoes for you
+                        <span class="text2stylepart">(Best value Best choose)</span>.
+                    </p>
+                    <p class="text3">
+                        Now no more <span class="text3stylepart">big size problem</span> we offer all sizes and you can get this in any country.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <main class="ourservicesec w-100 d-flex justify-content-center align-items-lg-end">
+        <div class="ourservice row">
+            <section class="col-4">
+                <div class="service1">
+                    <header class="service1header">
+                        <img src="photo/mainpage/servicesec/size.svg" width="30%">
+                        <span>Size</span>
+                    </header>
+                    <div class="service1txt">
+                        We support all sizes and the biggest sizes with comfortable design
+                    </div>
+                </div>
+            </section>
+            <section class="col-4">
+                <div class="service2">
+                    <header class="service2header">
+                        <img src="photo/mainpage/servicesec/materials.svg" width="28%">
+                        <span>Materials</span>
+                    </header>
+                    <div class="service2txt">
+                        We always use Environmentally friendly materials
+                    </div>
+                </div>
+            </section>
+            <section class="col-4">
+                <div class="service3">
+                    <header class="service3header">
+                        <img src="photo/mainpage/servicesec/inspiration.svg" width="27%">
+                        <span>Inspiration</span>
+                    </header>
+                    <div class="service3txt">
+                        We inspire our product all over the world
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <main class="accordion d-none" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left serveccollapsebutton" type="button" data-toggle="collapse" data-target="#collapseOne">
+                        <img src="photo/mainpage/servicesec/size.svg" width="10%">
+                        <span>Size</span>
+                    </button>
+                </h2>
+            </div>
+    
+            <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                <div class="card-body">
+                    <span></span>- We support all sizes and the biggest sizes with comfortable design
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left serveccollapsebutton" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                        <img src="photo/mainpage/servicesec/materials.svg" width="8%">
+                        <span>Materials</span>
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                <div class="card-body">
+                    - We always use Environmentally friendly materials
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left serveccollapsebutton" type="button" data-toggle="collapse" data-target="#collapseThree">
+                        <img src="photo/mainpage/servicesec/inspiration.svg" width="7%">
+                        <span>Inspiration</span>
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                <div class="card-body">
+                    - We inspire our product all over the world
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="productsec w-100">
+        <div class="productcon">
+            <header class="productheadercon">
+                <aside class="productheadertxt">
+                    <span class="productheader">Last styles from adidas</span>
+                    <span class="productsubtxt">This styles from 2020</span>
+                </aside>
+                <aside class="productheaderbutton">
+                    <a href="web/product.html" class="productseemore">see more</a>
+                </aside>
+            </header>
+            <section id="laststyles" class="product w-100">
+            </section>
+        </div>
+    </main>
+    <main class="ourpartnerssec w-100">
+        <div class="ourpartnersbg w-100 h-100"></div>
+        <div class="ourpartnerscontentland w-100 h-100">
+            <div class="ourpartnerscontent h-100 w-100">
+                <div class="stylebar w-100"></div>
+                <div class="ourpartnersheader"><span>Our Partners</span></div>
+                <section class="ourpartners">
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/1200x630bb.png" width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/download (1).png"width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/download.png"width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/1200x630bb.png"width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/images (1).png"width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/1200x630bb.png"width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/download.png"width="100%"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img src="photo/mainpage/ourpartenrssec/images (1).png"width="100%"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footersec w-100">
+        <div class="row footerprandsocialrow">
+            <section class="col-12 col-xl-3 footerprandsocial">
+                <div class="footerbrand w-100 d-flex justify-content-center align-items-center">
+                    <img src="photo/mainpage/footersec/adidasprand.png" width="65%">
+                </div>
+                <div class="footersocial w-100 d-flex justify-content-center align-items-center">
+                    <img src="photo/mainpage/footersec/twit.png" width="7%">
+                    <img src="photo/mainpage/footersec/pin.png" width="7%">
+                    <img src="photo/mainpage/footersec/insta.png" width="7%">
+                    <img src="photo/mainpage/footersec/face.png" width="7%">
+                </div>
+            </section>
+            <section class="col-4 col-xl-3 order-1 order-xl-0 footerpolicymobile">
+                <div class="footerpolicy w-100 d-flex justify-content-center align-items-end">
+                    <ul class="footerpolicylist">
+                        <li>&nbsp;&nbsp;<a href="">User Agreement</a></li>
+                        <li>&nbsp;&nbsp;<a href="">Privacy Policy</a></li>
+                        <li>&nbsp;&nbsp;<a href="">Cookies Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footermobile w-100 d-flex justify-content-center align-items-center">
+                    <img src="photo/mainpage/footersec/mobile.png" usemap="#footermobileapp" width="40%">
+                    <map name="footermobileapp">
+                        <area shape="rect" coords="0,0,200%,50%" href="facebook.com" alt="get on google play">
+                        <area shape="rect" coords="0,100,200%,50%" href="google.com" alt="get on google play">
+                    </map>
+                </div>
+            </section>
+            <section class="col-8 col-xl-6 order-xl-0" style="height: 100%;padding: 0px;">
+                <div class="row">
+                    <section class="col-4 footerlinks w-100 h-100 ">
+                        <span>Shop</span>
+                        <ul type="none">
+                            <li>Gift Guides</li>
+                            <li>Fan Art</li>
+                            <li>Blog</li>
+                            <li>Login</li>
+                            <li>Signup</li>
+                            <li>About Us</li>
+                        </ul>
+                    </section>
+                    <section class="col-4 footerlinks w-100 h-100">
+                        <span>Business</span>
+                        <ul type="none">
+                            <li>Delivery</li>
+                            <li>Returns</li>
+                            <li>Help Center</li>
+                            <li>Guidelines</li>
+                            <li>Copyright</li>
+                            <li>Investor Center</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </section>
+                    <section class="col-4 footerlinks w-100 h-100">
+                        <span>Online store</span>
+                        <ul type="none">
+                            <li>Sell online</li>
+                            <li>Features</li>
+                            <li>Examples</li>
+                            <li>Website editor</li>
+                            <li>Online retail</li>
+                            <li>Ecommerce website</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+<script src="bootstrap-4.6.2/site/static/docs/4.6/assets/js/vendor/jquery.slim.min.js"></script>
+<script src="bootstrap-4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="./js/firebaseconfig/firebaseconfig.js"></script>
+<script type="module" src="./js/mainpage/onload.js"></script>
+<script type="module" src="./js/auth/logincontrol.js"></script>
+<script type="module" src="./js/auth/loginauth.js"></script>
+<script type="module" src="./js/auth/logout.js"></script>
+<script type="module" src="./js/auth/forgetpassword.js"></script>
+<script type="module" src="./js/mainpage/lastproducts.js"></script>
+<script type="module" src="./js/cookie/cookiecontrole.js"></script>
+<script type="module" src="./js/chat/chat.js"></script>
+<script type="module" src="./js/product/search.js"></script>
+<script type="module" src="./js/getsigneduser/getsignedyser.js"></script>
+</html>
