@@ -63,7 +63,7 @@ function dbuserdataupload() {
   })
     .then(() => {
       wating.style.display = "none";
-      window.location.replace("../index.html");
+      window.location.replace("../../index.html");
     })
   .catch((error) => { console.log(error); });
 }
