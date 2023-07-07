@@ -65,7 +65,7 @@ searchinput.addEventListener("keyup", function () {
 
             listitem.addEventListener("click", function () { 
             setwanted(this.getAttribute("value"));
-            window.location.assign("../../web/showproduct.html");
+            window.location.assign("../../adidas/web/showproduct.html");
             })
         }
 
