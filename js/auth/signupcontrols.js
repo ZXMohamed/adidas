@@ -215,5 +215,5 @@ for (var i = 0; i < showpass.length; i++) {
 }
 gologin.addEventListener("click", function () {
     setgolog("t");
-    window.location.assign("../../index.html");
+    window.location.assign("../index.html");
 })
