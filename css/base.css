@@ -1,10 +1,10 @@
 html
 {
-    height: 100%;
+    height: 1080px;
 }
 body
 {
-    height: 100%;
+    height: 1080px;
     margin: 0px;
 }
 body::-webkit-scrollbar,.chatbody::-webkit-scrollbar
