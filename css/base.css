@@ -1,17 +1,14 @@
-*{
-    /*border: 1px solid;*/
-}
 html{
     background-color: #222A35;
-    display: flex;/*//$-----------------*/
-    flex-direction: column;/*//$-----------------*/
-    align-items: center;/*//$-----------------*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 body
 {
     box-shadow: 0px 0px 50px #ffffff57;
     overflow-x: hidden;
-    width: 1910px;/*//$-----------------*/
+    width: 1910px;
 }
 body::-webkit-scrollbar,.chatbody::-webkit-scrollbar
 {
@@ -58,7 +55,7 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .navbar
 {
     background-color: #222A35;
-    width: 1910px;/*//$-----------------*/
+    width: 1910px;
 }
 .navbar-brand
 {
@@ -380,8 +377,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 }
 .headersec
 {
-    height: 635px;/*//$-----------------*/
-    width: 1910px;/*//$-----------------*/
+    height: 635px;
+    width: 1910px;
     position: relative;
     top: 0px;
     transition-property: height;
@@ -451,7 +448,7 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     visibility: hidden; 
     transition-property:visibility filter;
     transition-duration: 1s;
-    width: 1910px;/*//$-----------------*/
+    width: 1910px;
 }
 .loginsec
 {
@@ -617,12 +614,12 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     font-family: "headers";
     font-weight: 900;
     margin-top: 7%;
-    width: 1910px;/*//$-----------------*/
+    width: 1910px;
 }
 .aboutsitesec
 {
-    height: 819px;/*//$-----------------*/
-    width: 1910px;/*//$-----------------*/
+    height: 819px;
+    width: 1910px;
 }
 .aboutsite
 {
@@ -672,8 +669,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .ourservicesec
 {
     margin-top: 100px;
-    height: 637px;/*//$-----------------*/
-    width: 1910px;/*//$-----------------*/
+    height: 637px;
+    width: 1910px;
 }
 .ourservice
 {
@@ -792,8 +789,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .productsec
 {
     margin-top: 100px;
-    height: 1456px;/*//$-----------------*/
-    width: 1910px;/*//$-----------------*/
+    height: 1456px;
+    width: 1910px;
 }
 .productcon
 {
@@ -989,8 +986,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .ourpartnerssec
 {
     margin-top: 200px;
-    height: 930px;/*//$-----------------*/
-    width: 1910px;/*//$-----------------*/
+    height: 930px;
+    width: 1910px;
     position: relative;
     top: 0px;
     overflow: hidden;
@@ -1075,7 +1072,7 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     padding-top: 1%;
     padding-bottom: 1%;
     overflow: hidden;
-    width: 1910px;/*//$-----------------*/
+    width: 1910px;
 }
 .footerprandsocial
 {
