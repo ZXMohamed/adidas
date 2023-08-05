@@ -1,16 +1,18 @@
-html
-{
-    height: 1080px;
-    width:1920px;
+html{
+    background-color: #222A35;
+    display: flex;/*//$-----------------*/
+    flex-direction: column;/*//$-----------------*/
+    align-items: center;/*//$-----------------*/
 }
 body
 {
-    height: 1080px;
-    width:1920px;
-    margin: 0px;
+    box-shadow: 0px 0px 50px #ffffff57;
+    overflow-x: hidden;
+    width: 1910px;/*//$-----------------*/
 }
 body::-webkit-scrollbar,.chatbody::-webkit-scrollbar
 {
+    background-color: #ffffff;
     background-color: rgba(192, 192, 192, 0.527);
     border-radius: 0vw;
     width: 0.7vw;
@@ -54,6 +56,7 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .navbar
 {
     background-color: #222A35;
+    width: 1910px;
 }
 .navbar-brand
 {
@@ -242,7 +245,7 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     right: 2%;
     z-index: 10;
     font-family: "symbols";
-    width: 3%;
+    width: 50px;
 }
 .floatbuttons>div
 {
@@ -264,8 +267,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     position: fixed;
     top:30%;
     right:7%;
-    width: 20%;
-    height: 60%;
+    width: 381px;
+    height: 558px;
     background-color: white;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
     z-index: 15;
@@ -375,7 +378,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 }
 .headersec
 {
-    height: 70%;
+    height: 635px;
+    width: 1910px;
     position: relative;
     top: 0px;
     transition-property: height;
@@ -445,12 +449,15 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     visibility: hidden; 
     transition-property:visibility filter;
     transition-duration: 1s;
+     width: 1910px;
 }
 .loginsec
 {
     border-color: yellowgreen;
     position: absolute;
     top: 0px;
+    height: 914px;
+    width: 1910px;
 }
 .loginform
 {
@@ -608,10 +615,12 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     font-family: "headers";
     font-weight: 900;
     margin-top: 7%;
+    width: 1910px;
 }
 .aboutsitesec
 {
-    height: 90%;
+    height: 819px;
+    width: 1910px;
 }
 .aboutsite
 {
@@ -661,7 +670,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .ourservicesec
 {
     margin-top: 100px;
-    height: 70%;
+    height: 637px;
+    width: 1910px;
 }
 .ourservice
 {
@@ -779,7 +789,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 
 .productsec
 {
-    height: 160%;
+    height: 1456px;
+    width: 1910px;
     margin-top: 100px;
 }
 .productcon
@@ -976,7 +987,8 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
 .ourpartnerssec
 {
     margin-top: 200px;
-    height: 100%;
+    height: 930px;
+    width: 1910px;
     position: relative;
     top: 0px;
     overflow: hidden;
@@ -1061,6 +1073,7 @@ body::-webkit-scrollbar-thumb:hover,.chatbody::-webkit-scrollbar-thumb:hover
     padding-top: 1%;
     padding-bottom: 1%;
     overflow: hidden;
+    width: 1910px;
 }
 .footerprandsocial
 {
