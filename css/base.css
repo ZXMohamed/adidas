@@ -3,12 +3,14 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height:100%;
 }
 body
 {
     box-shadow: 0px 0px 50px #ffffff57;
     overflow-x: hidden;
     width: 1910px;
+    height:100%;
 }
 body::-webkit-scrollbar,.chatbody::-webkit-scrollbar
 {
